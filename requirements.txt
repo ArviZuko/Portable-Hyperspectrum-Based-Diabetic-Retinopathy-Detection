@@ -1,0 +1,48 @@
+# ============================================================
+# HYPERLUMA - Requirements Specification
+# SMART - Sanjivani Multidisciplinary AI Research & Technology
+# ============================================================
+
+# ── Deep Learning & Neural Network Backbones ─────────────────
+# PyTorch and TorchVision (CUDA or CPU)
+# For GPU (CUDA 11.8): pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+# For CPU / Raspberry Pi: pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0.0
+torchvision>=0.15.0
+
+# PyTorch Image Models (Swin Transformer, EfficientNetV2, ResNeXt)
+timm>=0.9.2
+
+# ── Computer Vision & Image Processing ──────────────────────
+# OpenCV for camera capture, video streaming, and image filtering
+opencv-python>=4.8.0
+
+# Python Imaging Library
+Pillow>=9.5.0
+
+# ── Graphical User Interface (GUI) ───────────────────────────
+# Dual-compatible PyQt5/PyQt6 desktop framework
+PyQt5>=5.15.9
+
+# ── Scientific Computing & Hyperspectral Analysis ────────────
+# NumPy array manipulation (kept <2.0 for maximum PyTorch C-extension stability)
+numpy>=1.24.0,<2.0.0
+
+# SciPy for MATLAB .mat HSI datacube loading and spectral math
+scipy>=1.10.0
+
+# Matplotlib for embedded Qt spectral reflectance curves & graphs
+matplotlib>=3.7.0
+
+# Data analysis and spectral disease band mapping
+pandas>=2.0.0
+
+# Excel workbook processing for wavelength mapping data
+openpyxl>=3.1.2
+
+# ── Logging, Diagnostics & Utilities ─────────────────────────
+# Structured, asynchronous rotating file logger
+loguru>=0.7.0
+
+# Progress bar for model evaluation and dataset processing
+tqdm>=4.65.0
